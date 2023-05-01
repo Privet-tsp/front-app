@@ -1,0 +1,10 @@
+export { default as Login } from "./Login";
+export { default as LoginModerator } from "./LoginModerator";
+export { default as Register } from "./Register";
+export { default as RegisterModerator } from "./RegisterModerator";
+export { default as Profile } from "./Profile";
+export { default as Anketa } from "./Anketa";
+export { default as NotFound } from "./NotFound";
+export { default as User } from "./User";
+export { default as All } from "./All";
+export { default as Appeals } from "./Appeals";

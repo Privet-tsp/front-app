@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+body,
+html,
+#root {
+    font-family: "Rubik";
+    height: 100%;
+    background-color: #230e2b;
+}
+
+.gradient-btn-submit {
+    background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
+    box-shadow: 0px 20px 30px rgba(179, 34, 31, 0.2);
+}
+
+.gradient-btn-submit:hover {
+    background: linear-gradient(90deg, #ffc700 0%, #ff005c 100%);
+}
+
+.invalid {
+    box-shadow: inset 0px -2px 0px #a01414;
+}
+
+.bg-gradient {
+    background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
+}
+
+.male-selected {
+    background: linear-gradient(90deg, #0575e6 0%, #021b79 100%);
+    box-shadow: 0px 20px 30px rgba(179, 34, 31, 0.1);
+}
+
+.female-selected {
+    background: linear-gradient(90deg, #ec008c 0%, #fc6767 100%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+.online {
+    background: #33e159;
+    box-shadow: 0px 4px 20px #33e159;
+}
+
+.link.active {
+    @apply text-[#FE6703] before:absolute before:bottom-0 before:left-0 before:right-0 before:h-1 before:bg-gradient-to-r before:from-pink-500 before:via-red-500 before:to-yellow-500;
+}
+
+.red-gradient {
+    background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
+}
+
+.blue-gradient {
+    background: linear-gradient(90deg, #0575e6 0%, #021b79 100%);
+}
+
+.dark-gradient {
+    background: linear-gradient(90deg, #f8f8f8 0%, #250f2d 0.01%, #3a1845 100%);
+}
+
+.message-gradient {
+    background: linear-gradient(90deg, #ec008c 0%, #fc6767 100%);
+}
+
+.message-gradient-blue {
+    background: linear-gradient(90deg, #0575e6 0%, #021b79 100%);
+}
+
+.black-gradient {
+    background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 57.73%,
+            rgba(0, 0, 0, 0.2) 67.67%,
+            rgba(0, 0, 0, 0.2) 83.76%
+        ),
+        linear-gradient(0deg, #c4c4c4, #c4c4c4);
+}
